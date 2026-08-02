@@ -23,6 +23,9 @@ intents = discord.Intents.default()
 intents.message_content = True
 bot = commands.Bot(command_prefix="!", intents=intents)
 
+# Change this to your actual Dev Team Role ID!
+DEV_ROLE_ID = "YOUR_ROLE_ID_HERE"
+
 @bot.event
 async def on_ready():
     print(f"Logged in as {bot.user.name}")
@@ -32,13 +35,13 @@ async def on_message(message):
     if message.author == bot.user:
         return
 
-if "alert dev call" in message.content.lower():
+    if "alert dev call" in message.content.lower():
         alert_text = (
             "# ⚠️⚠️🚨🚨 ALERT DEV CALL 🚨🚨⚠️⚠️\n"
             "# ⚠️⚠️🚨🚨 ALERT DEV CALL 🚨🚨⚠️⚠️\n"
             "# ⚠️⚠️🚨🚨 ALERT DEV CALL 🚨🚨⚠️⚠️\n"
             "# ⚠️⚠️🚨🚨 ALERT DEV CALL 🚨🚨⚠️⚠️\n"
-            "<1533544240016134234>"
+            f"<@&{DEV_ROLE_ID}>"
         )
         await message.channel.send(alert_text)
 
