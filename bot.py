@@ -32,12 +32,15 @@ async def on_message(message):
     if message.author == bot.user:
         return
 
-    if "alert dev call" in message.content.lower():
-        await message.channel.send("⚠️⚠️🚨🚨 ALERT DEV CALL 🚨🚨⚠️⚠️
-⚠️⚠️🚨🚨 ALERT DEV CALL 🚨🚨⚠️⚠️
-⚠️⚠️🚨🚨 ALERT DEV CALL 🚨🚨⚠️⚠️
-⚠️⚠️🚨🚨 ALERT DEV CALL 🚨🚨⚠️⚠️
-@Dev team ")
+if "alert dev call" in message.content.lower():
+        alert_text = (
+            "# ⚠️⚠️🚨🚨 ALERT DEV CALL 🚨🚨⚠️⚠️\n"
+            "# ⚠️⚠️🚨🚨 ALERT DEV CALL 🚨🚨⚠️⚠️\n"
+            "# ⚠️⚠️🚨🚨 ALERT DEV CALL 🚨🚨⚠️⚠️\n"
+            "# ⚠️⚠️🚨🚨 ALERT DEV CALL 🚨🚨⚠️⚠️\n"
+            "<1533544240016134234>"
+        )
+        await message.channel.send(alert_text)
 
     await bot.process_commands(message)
 
