@@ -41,7 +41,7 @@ async def on_message(message):
             "# ⚠️⚠️🚨🚨 ALERT DEV CALL 🚨🚨⚠️⚠️\n"
             "# ⚠️⚠️🚨🚨 ALERT DEV CALL 🚨🚨⚠️⚠️\n"
             "# ⚠️⚠️🚨🚨 ALERT DEV CALL 🚨🚨⚠️⚠️\n"
-            f"<@&{DEV_ROLE_ID}>"
+            f"<@&{1500143470919159990}>"
         )
         await message.channel.send(alert_text)
 
