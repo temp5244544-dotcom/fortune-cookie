@@ -36,7 +36,8 @@ async def on_message(message):
         await message.channel.send("⚠️⚠️🚨🚨 ALERT DEV CALL 🚨🚨⚠️⚠️
 ⚠️⚠️🚨🚨 ALERT DEV CALL 🚨🚨⚠️⚠️
 ⚠️⚠️🚨🚨 ALERT DEV CALL 🚨🚨⚠️⚠️
-⚠️⚠️🚨🚨 ALERT DEV CALL 🚨🚨⚠️⚠️")
+⚠️⚠️🚨🚨 ALERT DEV CALL 🚨🚨⚠️⚠️
+@Dev team ")
 
     await bot.process_commands(message)
 
