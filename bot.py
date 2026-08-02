@@ -33,7 +33,10 @@ async def on_message(message):
         return
 
     if "alert dev call" in message.content.lower():
-        await message.channel.send("# ⚠️⚠️🚨🚨 ALERT DEV CALL 🚨🚨⚠️⚠️")
+        await message.channel.send("⚠️⚠️🚨🚨 ALERT DEV CALL 🚨🚨⚠️⚠️
+⚠️⚠️🚨🚨 ALERT DEV CALL 🚨🚨⚠️⚠️
+⚠️⚠️🚨🚨 ALERT DEV CALL 🚨🚨⚠️⚠️
+⚠️⚠️🚨🚨 ALERT DEV CALL 🚨🚨⚠️⚠️")
 
     await bot.process_commands(message)
 
